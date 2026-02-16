@@ -6,7 +6,7 @@
 /*   By: maaugust <maaugust@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 13:33:49 by maaugust          #+#    #+#             */
-/*   Updated: 2026/02/16 20:12:38 by maaugust         ###   ########.fr       */
+/*   Updated: 2026/02/16 23:40:28 by maaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 /**
  * @fn static char **free_split(char **split, size_t i)
- * @brief Frees a previously allocated array of strings in case of a malloc failure.
+ * @brief Frees a previously allocated array of strings in case of a malloc
+ * failure.
  * @details Iterates backwards from the given index 'i', freeing each string,
  * and finally frees the main array pointer itself to prevent memory leaks.
  * @param split The double pointer array to free.

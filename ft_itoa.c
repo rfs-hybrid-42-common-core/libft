@@ -6,7 +6,7 @@
 /*   By: maaugust <maaugust@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 13:34:24 by maaugust          #+#    #+#             */
-/*   Updated: 2026/02/16 20:11:23 by maaugust         ###   ########.fr       */
+/*   Updated: 2026/02/16 23:40:33 by maaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 /**
  * @fn static size_t get_len(long n)
- * @brief Calculates the length needed for the string representation of an integer.
+ * @brief Calculates the length needed for the string representation of an
+ * integer.
  * @details Takes into account the negative sign if the number is less than zero,
  * and increments length by dividing by 10 until the number is 0.
  * @param n The long integer to measure.
