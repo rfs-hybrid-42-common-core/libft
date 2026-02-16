@@ -6,12 +6,12 @@
 #    By: maaugust <maaugust@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/08 13:12:27 by maaugust          #+#    #+#              #
-#    Updated: 2026/02/16 18:36:07 by maaugust         ###   ########.fr        #
+#    Updated: 2026/02/16 22:27:00 by maaugust         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# ============================ PROJECT FILE NAMES ============================ #
-NAME              = libft.a
+# ============================ PROJECT FILE LIBFTS ============================ #
+LIBFT             = libft.a
 
 # ============================== COMPILER FLAGS ============================== #
 CC                = cc
@@ -53,19 +53,19 @@ B_OBJS            = $(B_SRCS:.c=.o)
 	@$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
 # ============================== BUILD TARGETS =============================== #
-all: $(NAME)
+all: $(LIBFT)
 
-$(NAME): $(OBJS)
+$(LIBFT): $(OBJS)
 	@printf "$(GREEN)✔ Libft mandatory objects built successfully.$(RESET)\n"
-	@$(AR) $(NAME) $(OBJS)
-	@printf "$(GREEN)$(BOLD)✔ Library created → $(NAME)$(RESET)\n"
+	@$(AR) $(LIBFT) $(OBJS)
+	@printf "$(GREEN)$(BOLD)✔ Library created → $(LIBFT)$(RESET)\n"
 
 bonus: .bonus
 
 .bonus: $(OBJS) $(B_OBJS)
 	@printf "$(GREEN)✔ Libft bonus objects built successfully.$(RESET)\n"
-	@$(AR) $(NAME) $(OBJS) $(B_OBJS)
-	@printf "$(GREEN)$(BOLD)✔ Library created with bonuses → $(NAME)$(RESET)\n"
+	@$(AR) $(LIBFT) $(OBJS) $(B_OBJS)
+	@printf "$(GREEN)$(BOLD)✔ Library created with bonuses → $(LIBFT)$(RESET)\n"
 	@touch .bonus
 
 # ============================== CLEAN TARGETS =============================== #
@@ -74,7 +74,7 @@ clean:
 	@printf "$(YELLOW)• Cleaned libft object files.$(RESET)\n"
 
 fclean: clean
-	@$(RM) $(NAME)
+	@$(RM) $(LIBFT)
 	@printf "$(RED)• Libft full clean complete.$(RESET)\n"
 
 re: fclean all
