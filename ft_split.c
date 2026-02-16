@@ -6,12 +6,21 @@
 /*   By: maaugust <maaugust@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 13:33:49 by maaugust          #+#    #+#             */
-/*   Updated: 2026/01/12 15:46:08 by maaugust         ###   ########.fr       */
+/*   Updated: 2026/02/16 20:12:38 by maaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @fn static char **free_split(char **split, size_t i)
+ * @brief Frees a previously allocated array of strings in case of a malloc failure.
+ * @details Iterates backwards from the given index 'i', freeing each string,
+ * and finally frees the main array pointer itself to prevent memory leaks.
+ * @param split The double pointer array to free.
+ * @param i The number of successfully allocated strings before the failure.
+ * @return Always returns NULL to be passed back by the main function.
+ */
 static char	**free_split(char **split, size_t i)
 {
 	while (i > 0)
@@ -20,6 +29,15 @@ static char	**free_split(char **split, size_t i)
 	return (NULL);
 }
 
+/**
+ * @fn static size_t count_words(char const *s, char c)
+ * @brief Counts the total number of words in a string separated by a delimiter.
+ * @details Iterates through the string, identifying word boundaries by checking
+ * for transitions between delimiter and non-delimiter characters.
+ * @param s The string to be analyzed.
+ * @param c The delimiter character.
+ * @return The total number of words found.
+ */
 static size_t	count_words(char const *s, char c)
 {
 	size_t	count;
@@ -41,6 +59,16 @@ static size_t	count_words(char const *s, char c)
 	return (count);
 }
 
+/**
+ * @fn static char *get_next_word(char const **s, char c)
+ * @brief Extracts the next word from the string sequence.
+ * @details Advances the string pointer past any leading delimiters, calculates
+ * the length of the upcoming word, and creates a substring. The original string
+ * pointer is updated via double indirection to point past the extracted word.
+ * @param s A pointer to the string pointer being parsed.
+ * @param c The delimiter character.
+ * @return A newly allocated string containing the extracted word.
+ */
 static char	*get_next_word(char const **s, char c)
 {
 	char	*word;
