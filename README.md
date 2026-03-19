@@ -1,7 +1,7 @@
 _This project has been created as part of the 42 curriculum by maaugust._
 
 <div align="center">
-  <img src="assets/cover-libft-bonus.png" alt="Libft Cover" width="100%" />
+  <img src="https://raw.githubusercontent.com/rfs-hybrid/42-Common-Core/main/assets/covers/cover-libft-bonus.png" alt="Libft Cover" width="100%" />
 </div>
 
 <div align="center">
@@ -57,11 +57,11 @@ _Utility functions that are either missing from libc or exist in a different for
 _Functions to manipulate memory using the `t_list` structure._
 
 ```c
-typedef struct s_list
+typedef struct      s_list
 {
     void            *content;
     struct s_list   *next;
-} t_list;
+}                   t_list;
 ```
 
 | Function | Description |
