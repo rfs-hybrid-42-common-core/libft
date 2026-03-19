@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maaugust <maaugust@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 13:40:52 by maaugust          #+#    #+#             */
-/*   Updated: 2025/12/13 16:42:57 by maaugust         ###   ########.fr       */
+/*   Updated: 2026/03/19 16:09:34 by maaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 /**
  * @fn int ft_lstsize(t_list *lst)
  * @brief Counts the number of nodes in a list.
+ * @details Iterates through the linked list sequentially, incrementing a 
+ * counter for each node encountered.
  * @param lst The beginning of the list.
  * @return    The length of the list.
  */

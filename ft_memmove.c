@@ -6,7 +6,7 @@
 /*   By: maaugust <maaugust@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 13:26:01 by maaugust          #+#    #+#             */
-/*   Updated: 2025/12/13 15:48:35 by maaugust         ###   ########.fr       */
+/*   Updated: 2026/03/19 15:38:56 by maaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 /**
  * @fn void *ft_memmove(void *dest, const void *src, size_t n)
  * @brief Copies memory area with overlap handling.
- * @details Copies n bytes from src to dest. The memory areas may overlap:
- * copying takes place as though the bytes in src are first copied into a
+ * @details Copies n bytes from src to dest. The memory areas may overlap: 
+ * copying takes place as though the bytes in src are first copied into a 
  * temporary array, and then to dest.
  * @param dest Pointer to the destination memory area.
  * @param src  Pointer to the source memory area.

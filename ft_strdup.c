@@ -6,7 +6,7 @@
 /*   By: maaugust <maaugust@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 13:32:17 by maaugust          #+#    #+#             */
-/*   Updated: 2025/12/13 16:22:29 by maaugust         ###   ########.fr       */
+/*   Updated: 2026/03/19 15:40:47 by maaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 /**
  * @fn char *ft_strdup(const char *s)
  * @brief Duplicates a string.
- * @details Returns a pointer to a new string which is a duplicate of the
+ * @details Returns a pointer to a new string which is a duplicate of the 
  * string s. Memory for the new string is obtained with malloc.
  * @param s The string to duplicate.
- * @return  Pointer to the duplicated string, or NULL if insufficient memory
+ * @return  Pointer to the duplicated string, or NULL if insufficient memory 
  * was available.
  */
 char	*ft_strdup(const char *s)

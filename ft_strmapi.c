@@ -6,7 +6,7 @@
 /*   By: maaugust <maaugust@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 13:34:50 by maaugust          #+#    #+#             */
-/*   Updated: 2025/12/13 16:34:34 by maaugust         ###   ########.fr       */
+/*   Updated: 2026/03/19 15:35:20 by maaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 /**
  * @fn char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
- * @brief Applies a function to each character of a string to create a new
+ * @brief Applies a function to each character of a string to create a new 
  * string.
- * @details Allocates a new string resulting from successive applications of
+ * @details Allocates a new string resulting from successive applications of 
  * 'f'.
  * @param s The string on which to iterate.
  * @param f The function to apply to each character.

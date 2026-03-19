@@ -6,20 +6,21 @@
 /*   By: maaugust <maaugust@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 13:26:11 by maaugust          #+#    #+#             */
-/*   Updated: 2025/12/13 16:22:40 by maaugust         ###   ########.fr       */
+/*   Updated: 2026/03/19 15:41:11 by maaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
+ * @fn size_t ft_strlcpy(char *dst, const char *src, size_t size)
  * @brief Size-bounded string copying.
- * @details Copies up to size - 1 characters from the NUL-terminated string src
+ * @details Copies up to size - 1 characters from the NUL-terminated string src 
  * to dst, NUL-terminating the result.
  * @param dst  Destination buffer.
  * @param src  Source string.
  * @param size Size of the destination buffer.
- * @return The total length of the string it tried to create (length of src).
+ * @return     The total length of the string it tried to create (length of src).
  */
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {

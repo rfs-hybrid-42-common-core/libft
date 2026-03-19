@@ -6,7 +6,7 @@
 /*   By: maaugust <maaugust@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 13:31:06 by maaugust          #+#    #+#             */
-/*   Updated: 2025/12/13 16:06:12 by maaugust         ###   ########.fr       */
+/*   Updated: 2026/03/19 15:41:59 by maaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 /**
  * @fn char *ft_strrchr(const char *s, int c)
- * @brief Locates the last occurrence of c (converted to a char) in the
+ * @brief Locates the last occurrence of c (converted to a char) in the 
  * string s.
- * @details The terminating null character is considered to be part of the
+ * @details The terminating null character is considered to be part of the 
  * string.
  * @param s The string to search.
  * @param c The character to find.
- * @return A pointer to the located character, or NULL if the character does
+ * @return  A pointer to the located character, or NULL if the character does 
  * not appear in the string.
  */
 char	*ft_strrchr(const char *s, int c)

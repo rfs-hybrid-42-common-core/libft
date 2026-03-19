@@ -6,27 +6,27 @@
 #    By: maaugust <maaugust@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/08 13:12:27 by maaugust          #+#    #+#              #
-#    Updated: 2026/02/16 22:27:00 by maaugust         ###   ########.fr        #
+#    Updated: 2026/03/19 16:11:13 by maaugust         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# ============================ PROJECT FILE LIBFTS ============================ #
-LIBFT             = libft.a
+# ============================ PROJECT FILE LIBFT ============================ #
+NAME             = libft.a
 
 # ============================== COMPILER FLAGS ============================== #
-CC                = cc
-CFLAGS            = -Wall -Wextra -Werror
-INCLUDES          = -I.
-AR                = ar rcs
-RM                = rm -f
+CC               = cc
+CFLAGS           = -Wall -Wextra -Werror
+INCLUDES         = -I.
+AR               = ar rcs
+RM               = rm -f
 
 # ================================== COLORS ================================== #
-GREEN             := \033[32m
-RED               := \033[31m
-YELLOW            := \033[33m
-CYAN              := \033[36m
-RESET             := \033[0m
-BOLD              := \033[1m
+GREEN            := \033[32m
+RED              := \033[31m
+YELLOW           := \033[33m
+CYAN             := \033[36m
+RESET            := \033[0m
+BOLD             := \033[1m
 
 # =============================== SOURCE FILES =============================== #
 # Mandatory files
@@ -53,19 +53,19 @@ B_OBJS            = $(B_SRCS:.c=.o)
 	@$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
 # ============================== BUILD TARGETS =============================== #
-all: $(LIBFT)
+all: $(NAME)
 
-$(LIBFT): $(OBJS)
+$(NAME): $(OBJS)
 	@printf "$(GREEN)✔ Libft mandatory objects built successfully.$(RESET)\n"
-	@$(AR) $(LIBFT) $(OBJS)
-	@printf "$(GREEN)$(BOLD)✔ Library created → $(LIBFT)$(RESET)\n"
+	@$(AR) $(NAME) $(OBJS)
+	@printf "$(GREEN)$(BOLD)✔ Library created → $(NAME)$(RESET)\n"
 
 bonus: .bonus
 
 .bonus: $(OBJS) $(B_OBJS)
 	@printf "$(GREEN)✔ Libft bonus objects built successfully.$(RESET)\n"
-	@$(AR) $(LIBFT) $(OBJS) $(B_OBJS)
-	@printf "$(GREEN)$(BOLD)✔ Library created with bonuses → $(LIBFT)$(RESET)\n"
+	@$(AR) $(NAME) $(OBJS) $(B_OBJS)
+	@printf "$(GREEN)$(BOLD)✔ Library created with bonuses → $(NAME)$(RESET)\n"
 	@touch .bonus
 
 # ============================== CLEAN TARGETS =============================== #
@@ -74,7 +74,7 @@ clean:
 	@printf "$(YELLOW)• Cleaned libft object files.$(RESET)\n"
 
 fclean: clean
-	@$(RM) $(LIBFT)
+	@$(RM) $(NAME)
 	@printf "$(RED)• Libft full clean complete.$(RESET)\n"
 
 re: fclean all

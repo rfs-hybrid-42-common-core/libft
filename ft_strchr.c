@@ -6,7 +6,7 @@
 /*   By: maaugust <maaugust@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 13:30:54 by maaugust          #+#    #+#             */
-/*   Updated: 2025/12/13 16:06:24 by maaugust         ###   ########.fr       */
+/*   Updated: 2026/03/19 15:38:41 by maaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 /**
  * @fn char *ft_strchr(const char *s, int c)
- * @brief Locates the first occurrence of c (converted to a char) in the
+ * @brief Locates the first occurrence of c (converted to a char) in the 
  * string s.
- * @details The terminating null character is considered to be part of the
+ * @details The terminating null character is considered to be part of the 
  * string; therefore if c is '\0', the functions locate the terminating '\0'.
  * @param s The string to search.
  * @param c The character to find.
- * @return A pointer to the located character, or NULL if the character does
+ * @return  A pointer to the located character, or NULL if the character does 
  * not appear in the string.
  */
 char	*ft_strchr(const char *s, int c)

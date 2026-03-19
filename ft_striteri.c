@@ -6,7 +6,7 @@
 /*   By: maaugust <maaugust@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 13:35:13 by maaugust          #+#    #+#             */
-/*   Updated: 2025/12/13 16:35:09 by maaugust         ###   ########.fr       */
+/*   Updated: 2026/03/19 15:33:20 by maaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 /**
  * @fn void ft_striteri(char *s, void (*f)(unsigned int, char*))
  * @brief Applies a function to each character of a string.
- * @details Applies the function 'f' to each character of the string passed as
- * argument, passing its index as the first argument. Each character is passed
+ * @details Applies the function 'f' to each character of the string passed as 
+ * argument, passing its index as the first argument. Each character is passed 
  * by address to 'f' to be modified if necessary.
  * @param s The string on which to iterate.
  * @param f The function to apply to each character.

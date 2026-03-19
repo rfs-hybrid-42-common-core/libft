@@ -6,7 +6,7 @@
 /*   By: maaugust <maaugust@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 13:32:04 by maaugust          #+#    #+#             */
-/*   Updated: 2025/12/13 16:20:40 by maaugust         ###   ########.fr       */
+/*   Updated: 2026/03/19 15:39:49 by maaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 /**
  * @fn void *ft_calloc(size_t nmemb, size_t size)
  * @brief Allocates memory for an array and initializes it to zero.
- * @details Allocates memory for an array of nmemb elements of size bytes each
- * and returns a pointer to the allocated memory. The memory is set to zero.
+ * @details Allocates memory for an array of nmemb elements of size bytes each 
+ * and returns a pointer to the allocated memory. The memory is set to zero. 
  * Includes a check for integer overflow.
  * @param nmemb Number of elements.
  * @param size  Size of each element.

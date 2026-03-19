@@ -6,7 +6,7 @@
 /*   By: maaugust <maaugust@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 13:33:35 by maaugust          #+#    #+#             */
-/*   Updated: 2025/12/13 16:26:25 by maaugust         ###   ########.fr       */
+/*   Updated: 2026/03/19 16:04:54 by maaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,11 @@
 
 /**
  * @fn char *ft_strtrim(char const *s1, char const *set)
- * @brief Allocates and returns a copy of 's1' with the characters specified in
+ * @brief Allocates and returns a copy of 's1' with the characters specified in 
  * 'set' removed from the beginning and the end of the string.
+ * @details Iterates from the start and the end of 's1', moving the indexes 
+ * inward as long as the characters are found within 'set'. It then allocates 
+ * and copies the remaining internal substring.
  * @param s1  The string to be trimmed.
  * @param set The reference set of characters to trim.
  * @return    The trimmed string, or NULL if allocation fails.

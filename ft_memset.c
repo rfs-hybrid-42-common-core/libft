@@ -6,7 +6,7 @@
 /*   By: maaugust <maaugust@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 13:25:25 by maaugust          #+#    #+#             */
-/*   Updated: 2025/12/13 15:46:23 by maaugust         ###   ########.fr       */
+/*   Updated: 2026/03/19 15:40:24 by maaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 /**
  * @fn void *ft_memset(void *s, int c, size_t n)
  * @brief Fills memory with a constant byte.
- * @details Fills the first n bytes of the memory area pointed to by s
+ * @details Fills the first n bytes of the memory area pointed to by s 
  * with the constant byte c.
  * @param s Pointer to the memory area.
  * @param c The byte to fill with.
  * @param n The number of bytes to fill.
- * @return A pointer to the memory area s.
+ * @return  A pointer to the memory area s.
  */
 void	*ft_memset(void *s, int c, size_t n)
 {

@@ -6,7 +6,7 @@
 /*   By: maaugust <maaugust@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 19:04:16 by maaugust          #+#    #+#             */
-/*   Updated: 2025/12/13 16:02:28 by maaugust         ###   ########.fr       */
+/*   Updated: 2026/03/19 15:46:00 by maaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@
  * @param s1 The first string.
  * @param s2 The second string.
  * @param n  The maximum number of characters to compare.
- * @return An integer less than, equal to, or greater than zero if s1 is found,
- * respectively, to be less than, to match, or be greater than s2.
+ * @return   An integer less than, equal to, or greater than zero if s1 is 
+ * found, respectively, to be less than, to match, or be greater than s2.
  */
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

@@ -6,7 +6,7 @@
 /*   By: maaugust <maaugust@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 13:33:14 by maaugust          #+#    #+#             */
-/*   Updated: 2025/12/13 16:25:53 by maaugust         ###   ########.fr       */
+/*   Updated: 2026/03/19 16:04:43 by maaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,11 @@
 
 /**
  * @fn char *ft_strjoin(char const *s1, char const *s2)
- * @brief Allocates and returns a new string, which is the result of the
+ * @brief Allocates and returns a new string, which is the result of the 
  * concatenation of 's1' and 's2'.
+ * @details Calculates the length of both strings, allocates enough memory 
+ * (including space for the null terminator), and uses memory copying to 
+ * append the strings sequentially.
  * @param s1 The prefix string.
  * @param s2 The suffix string.
  * @return   The new string, or NULL if the allocation fails.

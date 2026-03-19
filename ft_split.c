@@ -6,7 +6,7 @@
 /*   By: maaugust <maaugust@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 13:33:49 by maaugust          #+#    #+#             */
-/*   Updated: 2026/02/16 23:40:28 by maaugust         ###   ########.fr       */
+/*   Updated: 2026/03/19 15:40:12 by maaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 /**
  * @fn static char **free_split(char **split, size_t i)
- * @brief Frees a previously allocated array of strings in case of a malloc
+ * @brief Frees a previously allocated array of strings in case of a malloc 
  * failure.
- * @details Iterates backwards from the given index 'i', freeing each string,
+ * @details Iterates backwards from the given index 'i', freeing each string, 
  * and finally frees the main array pointer itself to prevent memory leaks.
  * @param split The double pointer array to free.
  * @param i The number of successfully allocated strings before the failure.
- * @return Always returns NULL to be passed back by the main function.
+ * @return  Always returns NULL to be passed back by the main function.
  */
 static char	**free_split(char **split, size_t i)
 {
@@ -33,11 +33,11 @@ static char	**free_split(char **split, size_t i)
 /**
  * @fn static size_t count_words(char const *s, char c)
  * @brief Counts the total number of words in a string separated by a delimiter.
- * @details Iterates through the string, identifying word boundaries by checking
- * for transitions between delimiter and non-delimiter characters.
+ * @details Iterates through the string, identifying word boundaries by 
+ * checking for transitions between delimiter and non-delimiter characters.
  * @param s The string to be analyzed.
  * @param c The delimiter character.
- * @return The total number of words found.
+ * @return  The total number of words found.
  */
 static size_t	count_words(char const *s, char c)
 {
@@ -63,12 +63,13 @@ static size_t	count_words(char const *s, char c)
 /**
  * @fn static char *get_next_word(char const **s, char c)
  * @brief Extracts the next word from the string sequence.
- * @details Advances the string pointer past any leading delimiters, calculates
- * the length of the upcoming word, and creates a substring. The original string
- * pointer is updated via double indirection to point past the extracted word.
+ * @details Advances the string pointer past any leading delimiters, calculates 
+ * the length of the upcoming word, and creates a substring. The original 
+ * string pointer is updated via double indirection to point past the extracted 
+ * word.
  * @param s A pointer to the string pointer being parsed.
  * @param c The delimiter character.
- * @return A newly allocated string containing the extracted word.
+ * @return  A newly allocated string containing the extracted word.
  */
 static char	*get_next_word(char const **s, char c)
 {
@@ -88,11 +89,11 @@ static char	*get_next_word(char const **s, char c)
 /**
  * @fn char **ft_split(char const *s, char c)
  * @brief Splits a string using a delimiter character.
- * @details Allocates and returns an array of strings obtained by splitting 's'
+ * @details Allocates and returns an array of strings obtained by splitting 's' 
  * using the character 'c' as a delimiter. The array ends with a NULL pointer.
  * @param s The string to split.
  * @param c The delimiter character.
- * @return  The array of new strings resulting from the split, or NULL if
+ * @return  The array of new strings resulting from the split, or NULL if 
  * allocation fails.
  */
 char	**ft_split(char const *s, char c)

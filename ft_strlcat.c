@@ -6,7 +6,7 @@
 /*   By: maaugust <maaugust@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 18:09:05 by maaugust          #+#    #+#             */
-/*   Updated: 2025/12/13 16:13:47 by maaugust         ###   ########.fr       */
+/*   Updated: 2026/03/19 15:41:07 by maaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,13 @@
 /**
  * @fn size_t ft_strlcat(char *dst, const char *src, size_t size)
  * @brief Size-bounded string concatenation.
- * @details Appends string src to the end of dst. It will append at most
- * size - strlen(dst) - 1 characters. It will then NUL-terminate, unless
+ * @details Appends string src to the end of dst. It will append at most 
+ * size - strlen(dst) - 1 characters. It will then NUL-terminate, unless 
  * size is 0 or the original dst string was longer than size.
  * @param dst  Destination buffer.
  * @param src  Source string.
  * @param size Size of the destination buffer.
- * @return The total length of the string it tried to create.
+ * @return     The total length of the string it tried to create.
  */
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {

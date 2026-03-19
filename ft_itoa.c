@@ -6,7 +6,7 @@
 /*   By: maaugust <maaugust@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 13:34:24 by maaugust          #+#    #+#             */
-/*   Updated: 2026/02/16 23:40:33 by maaugust         ###   ########.fr       */
+/*   Updated: 2026/03/19 15:39:30 by maaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 /**
  * @fn static size_t get_len(long n)
- * @brief Calculates the length needed for the string representation of an
+ * @brief Calculates the length needed for the string representation of an 
  * integer.
- * @details Takes into account the negative sign if the number is less than zero,
- * and increments length by dividing by 10 until the number is 0.
+ * @details Takes into account the negative sign if the number is less than 
+ * zero, and increments length by dividing by 10 until the number is 0.
  * @param n The long integer to measure.
- * @return The total number of characters required to represent the integer.
+ * @return  The total number of characters required to represent the integer.
  */
 static size_t	get_len(long n)
 {
@@ -42,7 +42,7 @@ static size_t	get_len(long n)
 /**
  * @fn char *ft_itoa(int n)
  * @brief Converts an integer to a string.
- * @details Allocates and returns a string representing the integer received as
+ * @details Allocates and returns a string representing the integer received as 
  * an argument. Handles negative numbers.
  * @param n The integer to convert.
  * @return  The string representing the integer, or NULL if allocation fails.

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maaugust <maaugust@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 13:41:06 by maaugust          #+#    #+#             */
-/*   Updated: 2025/12/13 16:43:52 by maaugust         ###   ########.fr       */
+/*   Updated: 2026/03/19 16:08:44 by maaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 /**
  * @fn void ft_lstadd_back(t_list **lst, t_list *new)
  * @brief Adds the node 'new' at the end of the list.
+ * @details Traverses the list to find the last node and appends the new node. 
+ * If the list is empty, it sets the list pointer directly to the new node.
  * @param lst The address of a pointer to the first link of a list.
  * @param new The address of a pointer to the node to be added to the list.
  */

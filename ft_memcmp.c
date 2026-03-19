@@ -6,7 +6,7 @@
 /*   By: maaugust <maaugust@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 13:31:31 by maaugust          #+#    #+#             */
-/*   Updated: 2025/12/13 16:05:37 by maaugust         ###   ########.fr       */
+/*   Updated: 2026/03/19 15:39:02 by maaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 /**
  * @fn int ft_memcmp(const void *s1, const void *s2, size_t n)
  * @brief Compares memory areas.
- * @details Compares the first n bytes (each interpreted as unsigned char)
+ * @details Compares the first n bytes (each interpreted as unsigned char) 
  * of the memory areas s1 and s2.
  * @param s1 The first memory area.
  * @param s2 The second memory area.
  * @param n  The number of bytes to compare.
- * @return An integer less than, equal to, or greater than zero.
+ * @return   An integer less than, equal to, or greater than zero.
  */
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
