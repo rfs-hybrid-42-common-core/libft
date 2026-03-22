@@ -6,7 +6,7 @@
 /*   By: maaugust <maaugust@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 13:40:52 by maaugust          #+#    #+#             */
-/*   Updated: 2026/03/19 16:09:34 by maaugust         ###   ########.fr       */
+/*   Updated: 2026/03/22 03:53:13 by maaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,13 +22,13 @@
  */
 int	ft_lstsize(t_list *lst)
 {
-	int	count;
+	int	size;
 
-	count = 0;
+	size = 0;
 	while (lst)
 	{
 		lst = lst->next;
-		count++;
+		size++;
 	}
-	return (count);
+	return (size);
 }
