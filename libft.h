@@ -6,7 +6,7 @@
 /*   By: maaugust <maaugust@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 13:50:22 by maaugust          #+#    #+#             */
-/*   Updated: 2026/03/22 05:33:07 by maaugust         ###   ########.fr       */
+/*   Updated: 2026/03/24 18:35:07 by maaugust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,11 @@
 /**
  * @struct s_list
  * @brief A node for a singly linked list.
+ * @details This structure represents a single element within a linked list. 
+ * By utilizing a void pointer for its content, it provides generic data 
+ * storage, allowing the list to hold strings, integers, or even other 
+ * complex structs. The next pointer creates the chain by pointing to the 
+ * subsequent node in memory.
  * @var s_list::content The data contained in the node. Void pointer allows 
  * storing any data type.
  * @var s_list::next    The pointer to the next node in the list, or NULL 
