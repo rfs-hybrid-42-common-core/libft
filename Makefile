@@ -6,16 +6,16 @@
 #    By: maaugust <maaugust@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/08 13:12:27 by maaugust          #+#    #+#              #
-#    Updated: 2026/03/22 05:27:27 by maaugust         ###   ########.fr        #
+#    Updated: 2026/03/24 18:31:48 by maaugust         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# ============================ PROJECT FILE LIBFT ============================ #
+# ============================ PROJECT FILE NAMES ============================ #
 NAME           = libft.a
 
 # ============================== COMPILER FLAGS ============================== #
 CC             = cc
-CFLAGS         = -Wall -Wextra -Werror
+CFLAGS         = -Wall -Wextra -Werror -MMD -MP
 INCLUDES       = -I.
 AR             = ar rcs
 RM             = rm -f
@@ -71,7 +71,7 @@ bonus: .bonus
 
 # ============================== CLEAN TARGETS =============================== #
 clean:
-	@$(RM) $(OBJ) $(B_OBJ) .bonus
+	@$(RM) $(OBJ) $(B_OBJ) $(OBJ:.o=.d) $(B_OBJ:.o=.d) .bonus
 	@printf "$(YELLOW)• Cleaned object files.$(RESET)\n"
 
 fclean: clean
@@ -82,3 +82,7 @@ re: fclean all
 
 # ============================== PHONY TARGETS =============================== #
 .PHONY: all clean fclean re bonus
+
+# =============================== DEPENDENCIES =============================== #
+-include $(OBJ:.o=.d)
+-include $(B_OBJ:.o=.d)
