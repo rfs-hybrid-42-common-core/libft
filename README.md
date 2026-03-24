@@ -191,10 +191,23 @@ norminette -R CheckForbiddenSourceHeader
 ---
 
 ## 📚 Resources & References
-* [C Library (libc) Man Pages](https://man7.org/linux/man-pages/dir_section_3.html)
-* [Makefile Tutorial](https://makefiletutorial.com/)
-* [42 Norm V4](https://cdn.intra.42.fr/pdf/pdf/96987/en.norm.pdf) - The strict coding standard for 42 C projects.
-* [Official 42 Norminette Repository](https://github.com/42School/norminette) - The open-source linter enforcing the strict 42 coding standard.
+
+**System Manuals:**
+* `man 3 isalpha` / `man 3 isdigit` - Essential manuals for character classification functions.
+* `man 3 string` - Overview of C string manipulation functions (or query individually like `man 3 strlen`, `man 3 strlcpy`).
+* `man 3 bzero` / `man 3 memset` / `man 3 memcpy` - Manuals detailing raw byte-level memory manipulation.
+* `man 3 malloc` / `man 3 free` - Manuals detailing dynamic memory allocation.
+
+**Articles & Guides:**
+* **[Makefile Tutorial](https://makefiletutorial.com/):** A complete, easy-to-read guide to understanding and building Makefiles.
+* **[Libft 42 Cursus (Medium)](https://medium.com/@piolodale/libft-42-cursus-871329cc51d3):** A comprehensive conceptual guide and walkthrough of the libft project by piolodale.
+
+**Video Tutorials:**
+* **[Oceano - All you need to know about linked lists, Libft](https://www.youtube.com/watch?v=mkZYMKwKkvI):** An excellent visual guide by Oceano breaking down the bonus linked list functions and pointer logic.
+
+**42 Standards:**
+* **[42 Norm V4](https://cdn.intra.42.fr/pdf/pdf/96987/en.norm.pdf):** The strict coding standard for 42 C projects.
+* **[Official 42 Norminette Repository](https://github.com/42School/norminette):** The open-source linter enforcing the strict 42 coding standard.
 
 ### 🤖 AI Usage & Transparency
 In the spirit of transparency and the learning objectives of the 42 curriculum, here is how AI tools were utilized during this project:
