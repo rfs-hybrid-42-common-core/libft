@@ -203,6 +203,8 @@ norminette -R CheckForbiddenSourceHeader
 * **[Libft 42 Cursus (Medium)](https://medium.com/@piolodale/libft-42-cursus-871329cc51d3):** A comprehensive conceptual guide and walkthrough of the libft project by piolodale.
 
 **Video Tutorials:**
+* **[CodeVault - C Programming Playlist](https://www.youtube.com/watch?v=zJzpCorv1JQ&list=PLfqABt5AS4FkIiyvV8mnZmf3p6PxbAtc8):** A comprehensive playlist covering core C concepts like `sizeof`, pointers, arrays, and memory management.
+* **[CodeVault - Linked Lists in C](https://www.youtube.com/watch?v=uBZHMkpsTfg&list=PLfqABt5AS4FmXeWuuNDS3XGENJO1VYGxl):** An incredibly clear, step-by-step video series breaking down the creation, iteration, and memory management of linked lists.
 * **[Oceano - All you need to know about linked lists, Libft](https://www.youtube.com/watch?v=mkZYMKwKkvI):** An excellent visual guide by Oceano breaking down the bonus linked list functions and pointer logic.
 
 **42 Standards:**
