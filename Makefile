@@ -6,7 +6,7 @@
 #    By: maaugust <maaugust@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/08 13:12:27 by maaugust          #+#    #+#              #
-#    Updated: 2026/03/24 18:31:48 by maaugust         ###   ########.fr        #
+#    Updated: 2026/03/25 05:59:42 by maaugust         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,8 +44,11 @@ B_SRC          = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c \
                  ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstclear_bonus.c \
 				 ft_lstdelone_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
 
-# Object files
+# =============================== OBJECT FILES =============================== #
+# Mandatory files
 OBJ            = $(SRC:.c=.o)
+
+# Bonus files
 B_OBJ          = $(B_SRC:.c=.o)
 
 # ============================ COMPILATION RULES ============================= #
