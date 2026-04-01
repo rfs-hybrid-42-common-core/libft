@@ -20,7 +20,7 @@ The goal is to understand the low-level implementation of memory manipulation, s
 
 ---
 
-## 📑 Contents
+## 📑 Feature
 This library is structured into three distinct parts complying with the project subject.
 
 ### 🔹 Part 1: Libc Re-implementation
@@ -78,7 +78,7 @@ typedef struct      s_list
 
 ---
 
-## 🧠 Concept & Logic Breakdown
+## 🧠 Algorithm & Data Structure
 
 To truly understand C, one must understand how data is manipulated at the byte level. Here is the core logic behind the different function categories:
 
